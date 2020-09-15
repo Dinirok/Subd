@@ -118,6 +118,7 @@
             this.loginField.Name = "loginField";
             this.loginField.Size = new System.Drawing.Size(261, 61);
             this.loginField.TabIndex = 6;
+            this.loginField.TextChanged += new System.EventHandler(this.loginField_TextChanged);
             // 
             // textBox1
             // 

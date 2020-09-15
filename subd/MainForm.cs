@@ -70,5 +70,18 @@ namespace subd
             BuySubscribeForm buySubscribeForm = new BuySubscribeForm();
             buySubscribeForm.Show();
         }
+
+        private void toolStripButton3_Click(object sender, EventArgs e) //registerForm
+        {
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            AddBook addBook = new AddBook();
+            addBook.Show();
+
+        }
     }
 }

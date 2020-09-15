@@ -86,8 +86,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton2,
             this.toolStripSeparator1,
-            this.Update,
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.Update});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1322, 27);

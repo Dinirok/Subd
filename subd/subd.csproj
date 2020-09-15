@@ -66,6 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuySubscribeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <Compile Include="Working.Designer.cs">
       <DependentUpon>Working.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuySubscribeForm.resx">
       <DependentUpon>BuySubscribeForm.cs</DependentUpon>
     </EmbeddedResource>
