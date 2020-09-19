@@ -31,29 +31,6 @@ namespace subd
         private void button1_Click(object sender, EventArgs e)
         {
             Buysub();
-            //DB db = new DB();
-            //DataTable table = new DataTable();
-            //MySqlDataAdapter adapter = new MySqlDataAdapter();
-            //MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login`=@uL", db.getConnection());
-            //command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginField.Text;
-            //adapter.SelectCommand = command;
-            //adapter.Fill(table);     //вывод результата запроса
-            //if (table.Rows.Count > 0)
-            //{   MySqlCommand command2=new MySqlCommand("UPDATE `users` SET `subscription` = '1' WHERE `users`.`id` = 7",db.getConnection)
-            //   // MySqlCommand command1 = new MySqlCommand("UPDATE `users` SET `subscription` = '1' WHERE `login` = @UL", db.getConnection());
-            //   // command1.Parameters.Add("@UL", MySqlDbType.VarChar).Value = loginField.Text;
-            //    adapter.SelectCommand = command2;
-            //}
-            //else { MessageBox.Show("Такого логина не существует"); }
-
-
-
-
-
-
-
-
-
         }
 
         private void loginBox_TextChanged(object sender, EventArgs e)
@@ -78,9 +55,25 @@ namespace subd
         private void Buysub()
         {
             DB db = new DB();
+  
+            
+            MySqlCommand command = new MySqlCommand("UPDATE `users` SET `subscription` = 'YES' WHERE `login` = @UL", db.getConnection());
+            command.Parameters.Add("@UL", MySqlDbType.VarChar).Value = loginField.Text;
             db.openConnection();
-            MySqlCommand command = new MySqlCommand("UPDATE `users` SET `subscription` = '1' WHERE `users`.`id` = 6", db.getConnection());
-            db.closeConnection();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Подписка куплена");
+            }
+            else
+            {
+                MessageBox.Show("Ошибка логина");
+            }
+            db.closeConnection();//
+        }
+
+        private void loginField_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -80,11 +80,20 @@ namespace subd
             adapter.Fill(table);     //вывод результата запроса
             
             if (table.Rows.Count > 0) //
-            {   
-                this.Hide();
-                MainForm mainForm = new MainForm();
-                            
-                mainForm.Show();
+            {
+                if (loginUser=="admin")    //enter for admin
+                {
+                    this.Hide();
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
+                }
+                else
+                {
+                    this.Hide();
+                   UserForm userForm = new UserForm();  //enter for user
+                    userForm.Show();
+
+                }
             }
             else { MessageBox.Show("Неправильный логин или пароль "); }
 

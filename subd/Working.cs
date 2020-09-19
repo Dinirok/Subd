@@ -44,7 +44,7 @@ namespace subd
             while (reader.Read())
             {
                 data.Add(new string[6]);
-                data[data.Count - 1][0] = reader[0].ToString();
+                //data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
                 data[data.Count - 1][2] = reader[2].ToString();
                 data[data.Count - 1][3] = reader[3].ToString();
@@ -67,7 +67,7 @@ namespace subd
         }
 
 
-        private void toolStripButton1_Click(object sender, EventArgs e)//dosnt work
+        /*private void toolStripButton1_Click(object sender, EventArgs e)//dosnt work
         {
             string a = Microsoft.VisualBasic.Interaction.InputBox("Введите ваш логин");
             DB db = new DB();
@@ -77,7 +77,7 @@ namespace subd
             command.Parameters.Add("@ul", MySqlDbType.VarString).Value = a;
             adapter.SelectCommand = command;
             db.closeConnection();
-        }
+        }*/
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
@@ -132,7 +132,7 @@ namespace subd
             while (reader.Read())
             {
                 data.Add(new string[6]);
-                data[data.Count - 1][0] = reader[0].ToString();
+               // data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
                 data[data.Count - 1][2] = reader[2].ToString();
                 data[data.Count - 1][3] = reader[3].ToString();
@@ -141,7 +141,7 @@ namespace subd
             reader.Close();
             myConnection.Close();
             foreach (string[] s in data)
-            {
+            {   
                 dataGridView2.Rows.Add(s);
             }
 
