@@ -35,9 +35,11 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.Авторизация = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -46,6 +48,7 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MainPanel.Controls.Add(this.button1);
             this.MainPanel.Controls.Add(this.toolStrip1);
             this.MainPanel.Controls.Add(this.panel2);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -65,7 +68,8 @@
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripButton3,
-            this.toolStripButton4});
+            this.toolStripButton4,
+            this.toolStripButton5});
             this.toolStrip1.Location = new System.Drawing.Point(0, 53);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 27);
@@ -112,6 +116,16 @@
             this.toolStripButton4.Text = "Добавить книгу";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(109, 24);
+            this.toolStripButton5.Text = "удалить книгу";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -151,6 +165,15 @@
             this.Авторизация.TabIndex = 0;
             this.Авторизация.Text = "Главный экран";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(42, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 39);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Отчет";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -182,5 +205,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.Button button1;
     }
 }

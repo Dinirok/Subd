@@ -35,8 +35,8 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.Update = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.Update = new System.Windows.Forms.ToolStripButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +64,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1322, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1508, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,7 +90,7 @@
             this.Update});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1322, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(1508, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -109,16 +109,6 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
-            // Update
-            // 
-            this.Update.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Update.Image = ((System.Drawing.Image)(resources.GetObject("Update.Image")));
-            this.Update.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(67, 24);
-            this.Update.Text = "UPDATE";
-            this.Update.Click += new System.EventHandler(this.Update_Click);
-            // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -128,6 +118,16 @@
             this.toolStripButton1.Size = new System.Drawing.Size(181, 24);
             this.toolStripButton1.Text = "Вывести таблицу склада";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            // 
+            // Update
+            // 
+            this.Update.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Update.Image = ((System.Drawing.Image)(resources.GetObject("Update.Image")));
+            this.Update.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(67, 24);
+            this.Update.Text = "UPDATE";
+            this.Update.Click += new System.EventHandler(this.Update_Click);
             // 
             // dataGridView1
             // 
@@ -139,10 +139,10 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 71);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 71);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 349);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 349);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -184,10 +184,10 @@
             this.name,
             this.жанр,
             this.описание});
-            this.dataGridView2.Location = new System.Drawing.Point(649, 71);
+            this.dataGridView2.Location = new System.Drawing.Point(761, 71);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(620, 349);
+            this.dataGridView2.Size = new System.Drawing.Size(711, 349);
             this.dataGridView2.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -214,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1322, 554);
+            this.ClientSize = new System.Drawing.Size(1508, 554);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.toolStrip1);
