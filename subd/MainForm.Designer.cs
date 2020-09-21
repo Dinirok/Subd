@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -39,7 +40,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.Авторизация = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,6 +60,15 @@
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             this.MainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPanel_MouseDown);
             this.MainPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPanel_MouseMove);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(42, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 39);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Отчет";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // toolStrip1
             // 
@@ -164,15 +173,6 @@
             this.Авторизация.Size = new System.Drawing.Size(319, 46);
             this.Авторизация.TabIndex = 0;
             this.Авторизация.Text = "Главный экран";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(42, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 39);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Отчет";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
